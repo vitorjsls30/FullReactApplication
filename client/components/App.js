@@ -14,7 +14,7 @@ export default class App extends React.Component {
             </h1>
         );
     }
-    
+
     formatName(user) {
         return user.firstName + ' ' + user.lastName;
     }

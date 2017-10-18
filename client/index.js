@@ -1,6 +1,18 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import App from './components/App';
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
 
-ReactDom.render(<App />, document.getElementById('root'));
+function App() {
+  return (
+    <div>
+      <Welcome name="Sara" />
+      <Welcome name="Vitor" />
+      <Welcome name="Vinicius" />
+    </div>
+  );
+  }
+
+ReactDom.render(<App/>, document.getElementById('root'));
