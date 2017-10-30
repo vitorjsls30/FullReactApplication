@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports  = {
-    entry: './client/state-and-lifecycle/tick-clock/index.js',
+    entry: './client/handling-events/event-handler-on-class/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
