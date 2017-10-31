@@ -10,13 +10,15 @@ class Toggle extends React.Component {
   }
 
   handleClick() {
-    console.log('inside handleClick');
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
   }
 
   render() {
     return (
       <button onClick={this.handleClick}>
-        Button Component
+        {this.state.isToggleOn ? 'ON' : 'OFF'}
       </button>
     );
   }
