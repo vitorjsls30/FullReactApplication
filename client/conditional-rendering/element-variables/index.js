@@ -1,37 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function LoginButton(props) {
-  return (
-    <button onClick={props.onClick}>
-      Login
-    </button>
-  );
-}
+import Greeting from './greeting';
+import LoginButton from './loginButton';
+import LogoutButton from './logoutButton';
 
-function LogoutButton(props) {
-  return (
-    <button onClick={props.onClick}>
-      Logout
-    </button>
-  );
-}
-
-function UserGreeting(props) {
-  return <h1>Welcome back!</h1>
-}
-
-function GuestGreeting(props) {
-  return <h1>Please sign up.</h1>
-}
-
-function Greeting(props) {
-  const isLoggedIn = props.isLoggedIn;
-  if (isLoggedIn) {
-    return <UserGreeting />;
-  }
-  return <GuestGreeting />;
-}
 
 class LoginControl extends React.Component {
   constructor(props) {
