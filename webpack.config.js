@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports  = {
-    entry: './client/conditional-rendering/element-variables/index.js',
+    entry: './client/conditional-rendering/prevent-rendering/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
