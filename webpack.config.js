@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports  = {
-    entry: './client/forms/null-value/index.js',
+    entry: './client/lifting-state/lifting-up/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
